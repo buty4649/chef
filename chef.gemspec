@@ -87,3 +87,5 @@ Gem::Specification.new do |s|
     "source_code_uri"   => "https://github.com/chef/chef/",
   }
 end
+
+warn "chef.gemspec done!"
