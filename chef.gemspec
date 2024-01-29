@@ -9,6 +9,7 @@ if File.exist?(vs_path)
   warn "eval success!"
 else
   # if the path doesn't exist then we're just in the wild gem and not in the git repo
+  warn 'require "chef-utils/version_string"'
   require "chef-utils/version_string"
 end
 require "chef/version"
