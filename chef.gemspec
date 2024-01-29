@@ -6,6 +6,7 @@ warn "File.exist?(vs_path): #{File.exist?(vs_path)}"
 if File.exist?(vs_path)
   # this is the moral equivalent of a require_relative since bundler makes require_relative here fail hard
   eval(IO.read(vs_path))
+  warn "eval success!"
 else
   # if the path doesn't exist then we're just in the wild gem and not in the git repo
   require "chef-utils/version_string"
